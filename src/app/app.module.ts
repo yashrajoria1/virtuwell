@@ -11,7 +11,8 @@ import {MatCardModule} from '@angular/material/card';
 import { VisionComponent } from "./components/vision/vision";
 import { PromiseComponent } from './components/promise/promise.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ExperienceComponent } from './components/experience/experience.component'
+import { ExperienceComponent } from './components/experience/experience.component';
+import { HistoryComponent } from './components/history/history.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     VisionComponent,
     PromiseComponent,
     FooterComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
