@@ -13,7 +13,7 @@ mat-toolbar {
   padding: 1.3rem 0;
   color: #495057;
   text-decoration: none;
-  /* font-size: 15px; */
+  font-size: 14px;
   transition: all 0.15s ease-in-out;
 }
 #nav_contents a:hover {
