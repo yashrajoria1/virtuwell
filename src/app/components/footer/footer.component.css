@@ -59,6 +59,7 @@
   }
     .lang-bg a:hover {
       color: #731b9f;
+      text-decoration: none;
     }
 
   .legal {
@@ -79,7 +80,7 @@
   .hovereffect:hover {
     color: #731b9f;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
   }
   .terms {
     padding-left: 1rem;
