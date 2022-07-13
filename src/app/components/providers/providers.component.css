@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.container h3 {
+    color: #495057;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.container h2 {
+    color:black;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.container p {
+    color:#495057;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+.provider-text {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    margin-left: 20%;
+    flex: 0.5;
+    margin-bottom: 5rem;
+}
+
+.provider-text a {
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 14px;
+    color: #954fba;
+    background-color: transparent;
+    padding-top: 1rem;
+}
+.provider-text a:hover {
+    text-decoration: underline;
+}
+
+.container img {
+    padding-left: 11rem;
+    padding-top: 7rem;
+}

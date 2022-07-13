@@ -12,7 +12,8 @@ import { VisionComponent } from "./components/vision/vision";
 import { PromiseComponent } from './components/promise/promise.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceComponent } from './components/experience/experience.component';
-import { HistoryComponent } from './components/history/history.component'
+import { HistoryComponent } from './components/history/history.component';
+import { ProvidersComponent } from './components/providers/providers.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { HistoryComponent } from './components/history/history.component'
     PromiseComponent,
     FooterComponent,
     ExperienceComponent,
-    HistoryComponent
+    HistoryComponent,
+    ProvidersComponent
   ],
   imports: [
     BrowserModule,
