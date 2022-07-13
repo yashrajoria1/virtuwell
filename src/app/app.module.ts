@@ -9,6 +9,11 @@ import { BannerComponent } from './components/banner/banner.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { VisionComponent } from './components/vision/vision';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { BannerComponent } from './components/banner/banner.component';
+import { VisionComponent } from "./components/vision/vision";
+
 import { PromiseComponent } from './components/promise/promise.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceComponent } from './components/experience/experience.component';

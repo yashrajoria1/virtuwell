@@ -10,14 +10,13 @@
 .container h2 {
     color:black;
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.9rem;
+    line-height: 3rem;
 }
 .container p {
     color:#495057;
     font-weight: 500;
-    font-size: 17px;
-    text-align: left;
+    font-size: 20px;
     line-height: 1.5rem;
 }
 .provider-text {
@@ -26,14 +25,13 @@
     flex-direction: column;
     line-height: normal;
     margin-left: 20%;
-    flex: 0.5;
     margin-bottom: 5rem;
 }
 
 .provider-text a {
     text-decoration: none;
     font-weight: 550;
-    font-size: 14px;
+    font-size: 18px;
     color: #954fba;
     background-color: transparent;
     padding-top: 1rem;
@@ -43,6 +41,6 @@
 }
 
 .container img {
-    padding-left: 11rem;
-    padding-top: 7rem;
+    margin-right: 14rem;
+    padding-top: 4.7rem;
 }
