@@ -6,14 +6,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BannerComponent } from './components/banner/banner.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
-import { VisionComponent } from "./components/vision/vision";
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { VisionComponent } from './components/vision/vision';
 import { PromiseComponent } from './components/promise/promise.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { HistoryComponent } from './components/history/history.component';
-import { ProvidersComponent } from './components/providers/providers.component'
+import { ProvidersComponent } from './components/providers/providers.component';
+import { CareersComponent } from './components/careers/careers.component';
+import { BusinessComponent } from './components/business/business.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { ProvidersComponent } from './components/providers/providers.component'
     FooterComponent,
     ExperienceComponent,
     HistoryComponent,
-    ProvidersComponent
+    ProvidersComponent,
+    CareersComponent,
+    BusinessComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,9 +36,9 @@ import { ProvidersComponent } from './components/providers/providers.component'
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

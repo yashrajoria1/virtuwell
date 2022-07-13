@@ -1,0 +1,120 @@
+.contact {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.business {
+  width: 40%;
+  margin: 1rem auto;
+}
+
+.business h3 {
+  font-size: large;
+  font-weight: 500;
+}
+
+.business h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.th_break {
+  width: 15%;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+.perks {
+  width: 45%;
+  text-align: left;
+  margin: 1rem auto;
+  line-height: 1.5;
+}
+
+.perks_subdiv {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.perks_subdiv img {
+  max-width: 10rem;
+  margin-right: 1rem;
+}
+
+.perks_subsubdiv h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.perks_subsubdiv p {
+  font-weight: 500;
+  font-size: medium;
+}
+
+.btn-contact {
+  background-color: #954fba;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+  background-image: linear-gradient(
+    90deg,
+    rgba(149, 79, 186, 0.25) 0,
+    rgba(69, 147, 224, 0.25)
+  );
+  width: 18%;
+  padding: 1rem;
+}
+
+.btn-contact a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 600;
+}
+
+.get-started {
+  width: 100%;
+  background-color: #954fba;
+  background-image: linear-gradient(
+    90deg,
+    rgba(149, 79, 186, 0.25) 0,
+    rgba(69, 147, 224, 0.25)
+  );
+  text-align: center;
+  margin-top: 3rem;
+  padding: 6rem 0;
+  color: white;
+}
+
+.get-started h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.get-started h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.get-started button {
+  background-color: white;
+  cursor: pointer;
+  color: #954fba;
+  font-size: large;
+  font-weight: 600;
+  border: 0.2rem solid transparent;
+  margin-top: 2rem;
+  width: 12%;
+  padding: 1rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.get-started button:hover {
+  border: 0.2rem solid white;
+  background-color: #954fba;
+  color: white;
+}
