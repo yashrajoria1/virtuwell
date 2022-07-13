@@ -106,4 +106,8 @@
     margin-top: -5.5rem;
     margin-right: 30px;
   }
+
+  .private {
+    border-bottom: 0.27rem solid #731b9f;
+  }
   
