@@ -5,11 +5,12 @@
 }
 .header h3 {
   font-size: 25px;
-  color: #000052;
+  color: #495057;
 }
 .header h1 {
   font-size: 35px;
   font-weight: 700;
+  margin-bottom: 3rem;
 }
 
 .guarantee {

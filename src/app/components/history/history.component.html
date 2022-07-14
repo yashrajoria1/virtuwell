@@ -3,49 +3,13 @@
     <h2>Our History</h2>
     <h1>Innovation - it's in our DNA</h1>
   </div>
-  <div class="image-text">
+  <div class="image-text" *ngFor="let history of histories">
     <div class="img">
-      <img [src]="url_1957" width="350" height="400" alt="" />
+      <img [src]="history.image" width="350" height="400" alt="" />
     </div>
     <div class="img-head">
-      <h2>1957</h2>
+      <h2>{{history.header}}</h2>
     </div>
-    <p class="img-p">
-      In the 1900s Americans weren't receiving medical care because it was too
-      expensive, which led to more serious, but preventable, illnesses. Four men
-      saw the problem and created the first fully prepaid health plan - which
-      wasn't even legal at the time. This group became HealthPartners, the first
-      consumer-governed integrated health insurance and medical care
-      organization.
-    </p>
-  </div>
-  <div class="image-text">
-    <div class="img">
-      <img [src]="url_2010" width="350" height="400" alt="" />
-    </div>
-    <div class="img-head">
-      <h2>2010</h2>
-    </div>
-    <p class="img-p">
-      With the same innovative spirit, two seasoned healthcare leaders, Kevin
-      Palattao and Kris Johnson, started exploring an idea they originally
-      called Health Harmony. Coincidentally, both the children of family
-      physicians, they set out to improve the "doctor's visit." On October 25th,
-      2010 virtuwell.com, the online clinic treating 30 common conditions was
-      introduced to Minnesota residents.
-    </p>
-  </div>
-  <div class="image-text">
-    <div class="img">
-      <img [src]="url_today" width="350" height="400" alt="" />
-    </div>
-    <div class="img-head">
-      <h2>Today</h2>
-    </div>
-    <p class="img-p">
-      The list of services has doubled and licensing has expanded to 13 states.
-      And Virtuwell is still changing the way people see, experience and think
-      about healthcare, proving simple is better.
-    </p>
+    <p class="img-p">{{history.para}}</p>
   </div>
 </div>
