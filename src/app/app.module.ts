@@ -16,6 +16,7 @@ import { HistoryComponent } from './components/history/history.component';
 import { ProvidersComponent } from './components/providers/providers.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { BusinessComponent } from './components/business/business.component';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { BusinessComponent } from './components/business/business.component';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
