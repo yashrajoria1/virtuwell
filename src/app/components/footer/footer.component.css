@@ -1,5 +1,6 @@
 #footer {
     display: flex;
+    flex-direction: row;
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -113,3 +114,8 @@
     border-bottom: 0.27rem solid #731b9f;
   }
   
+  @media screen and (max-width: 1024px) {
+    #footer {
+      flex-direction: column;
+    }
+  }
