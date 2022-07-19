@@ -21,7 +21,7 @@ export class PageRenderComponent implements OnInit, AfterContentInit {
             for (const reference of pageReferences) {
               const uid = reference.uid;
               const contentTypeUid = reference['_content_type_uid'];
-              this.cs.getEntry(contentTypeUid).then(console.log);
+              this.cs.getEntry(uid).then(console.log);
               console.log(uid, contentTypeUid);
             }
           } catch (error) {
