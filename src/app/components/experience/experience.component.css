@@ -1,0 +1,127 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h3 {
+  font-size: 25px;
+  color: #000052;
+}
+.header h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.guarantee {
+  background-image: url("https://www.virtuwell.com/oh-so-simple-guarantee.f9d8d6182c66cfe6dfcb.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  height: 500px;
+  margin-left: 38rem;
+  margin-top: 5rem;
+}
+
+.card {
+  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  width: 30%;
+  margin-top: -20rem;
+  margin-left: 18rem;
+  margin-bottom: 6rem;
+  padding: 4rem;
+  height: 400px;
+  border-bottom: 0.25rem solid #aed248;
+  box-shadow: 0.1rem 1.5rem 3rem 0 rgb(0 0 0 / 10%);
+  border-radius: 0;
+}
+
+.card-header {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.card-content {
+  margin-top: 1rem;
+  color: #495057;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.global {
+  margin-bottom: 10%;
+}
+/* .global-image {
+  background: url("https://www.virtuwell.com/our-impact-map.e49bc675737158ad4f58.webp");
+  height: 400px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+} */
+
+.impact {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  align-items: center;
+  /* margin-right:35rem; */
+  /* margin-top: -17rem; */
+  margin-bottom: 5rem;
+}
+
+.impact h3 {
+  font-size: 1.5rem;
+}
+
+.impact h1 {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  width: 50%;
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  /* margin-top: -28%; */
+  /* margin-left: 35%; */
+  line-height: normal;
+  text-align: center;
+}
+
+.nums {
+  color: #954fba;
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.nums_data {
+  color: #495057;
+  font-size: 20px;
+  margin-bottom: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-stats {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-image: url("https://www.virtuwell.com/our-impact-map.e49bc675737158ad4f58.webp");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.th_break {
+  width: 9%;
+}
