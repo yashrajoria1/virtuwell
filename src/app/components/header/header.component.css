@@ -21,7 +21,7 @@ nav {
   padding: 1.35rem 0;
   color: #495057;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.15s ease-in-out;
 }
@@ -103,17 +103,17 @@ nav {
   #hambug {
     display: block;
   }
-  .contents:not(:nth-child(8)){
+  .contents:not(:nth-child(8)) {
     display: none;
   }
   #nav_contents a,
-  #nav_contents button{
+  #nav_contents button {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .contents{
+  .contents {
     display: none;
   }
   .logo img {
@@ -127,9 +127,12 @@ nav {
   height: 100vh;
   width: 100%;
   background-color: #f2f2f2;
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding-top: 1rem;
   animation: a 1s;
+  top: 0;
+  z-index: 1;
+  text-align: center;
 }
 #nav_contents_1 a {
   color: #666;

@@ -223,11 +223,18 @@ th:last-child {
     margin-top: 10rem;
     background-position: center;
   }
-  .impact h1{
+  .impact h1 {
     font-size: 2rem;
     width: 80%;
   }
   .card-header {
     line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    padding: 2rem;
   }
 }
