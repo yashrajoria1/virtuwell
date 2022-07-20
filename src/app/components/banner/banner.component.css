@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("https://www.virtuwell.com/assets/images/hero_inside-virtuwell.webp");
+  background-image: url("https://www.virtuwell.com/assets/images/hero_inside-virtuwell_1440.webp");
   background-repeat: no-repeat;
    background-size: cover;
    margin-top: 4rem;
@@ -44,4 +44,27 @@
 
 .th_break {
   width: 6%;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    background-image: url("https://www.virtuwell.com/assets/images/hero_inside-virtuwell.webp");
+    background-position-x: center;
+    height: 40vh;
+  }
+  .banner-text h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0rem;
+  }
+  .banner-text h3 {
+    font-size: calc(1.375rem + 1.5vw);
+    line-height: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn-getstarted {
+    width: 100%;
+    margin-top: 0.7rem;
+  }
 }

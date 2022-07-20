@@ -64,7 +64,7 @@
     rgba(149, 79, 186, 0.25) 0,
     rgba(69, 147, 224, 0.25)
   );
-  width: 18%;
+  width: 269px;
   padding: 1rem;
 }
 
@@ -108,7 +108,7 @@
   font-weight: 600;
   border: 0.2rem solid transparent;
   margin-top: 2rem;
-  width: 12%;
+  width: 158px;
   padding: 1rem;
   transition: all 0.15s ease-in-out;
 }
@@ -117,4 +117,36 @@
   border: 0.2rem solid white;
   background-color: #954fba;
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact{
+    margin-top: 18rem;
+  }
+  .business {
+    width: 100%;
+  }
+  .business h1 {
+    font-size: 2rem;
+  }
+  .perks{
+    width: 80%;
+    text-align: center;
+  }
+  .perks_subdiv {
+    flex-direction: column;
+    width: 100%;
+  }
+  .perks_subdiv img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  .get-started h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .get-started h2 {
+    font-size: 1.5rem;
+  }
 }

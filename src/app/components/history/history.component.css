@@ -27,6 +27,7 @@
     margin-top: 5rem;
     margin-left: 7rem;
 }
+
 .img-head {
     color: #495057;
     margin-left: 1rem;
@@ -40,4 +41,37 @@
     line-height: 1.5rem;
     font-weight: 500;
     color: #495057;
+}
+
+@media screen and (max-width: 1024px) {
+    .heading h1 {
+        font-size: 30px;
+    }
+    .heading h2 {
+        font-size: 18px;
+    }
+    .img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-text {
+        flex-direction: column;
+        margin-left: 0rem;
+    }
+    .img-head {
+        /* width: 100%; */
+        /* justify-content: center; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-head h2 {
+        font-size: 1.5rem;
+    }
+    .img-p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0rem;
+        padding: 1rem;
+    }
 }

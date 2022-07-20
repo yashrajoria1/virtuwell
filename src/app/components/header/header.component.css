@@ -1,13 +1,19 @@
-mat-toolbar {
+nav {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   position: fixed;
+  width: -webkit-fill-available;
+  align-items: center;
+  height: 4rem;
   top: 0;
   z-index: 1;
 }
 
 #nav_contents {
+  display: flex;
   height: 4rem;
-  margin-top: 1.95rem;
+  /* margin-top: 1.95rem; */
 }
 
 #nav_contents a {
@@ -15,7 +21,8 @@ mat-toolbar {
   padding: 1.35rem 0;
   color: #495057;
   text-decoration: none;
-  font-size: 14px;
+  font-size: .9rem;
+  font-weight: 500;
   transition: all 0.15s ease-in-out;
 }
 #nav_contents a:hover {
@@ -37,4 +44,96 @@ mat-toolbar {
   padding: 0.2rem 1.25rem;
   border-radius: 0%;
   /* display: none; */
+}
+#hambug {
+  height: 4rem;
+  width: 4rem;
+  border-right: 0.1rem solid #d2d2d2;
+  display: none;
+}
+#hambug_menu {
+  /* display: none; */
+  position: relative;
+  width: 26px;
+  height: 20px;
+  top: 1rem;
+  left: 0.2rem;
+  white-space: nowrap;
+  margin-left: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.bar {
+  display: block;
+  position: absolute;
+  /* width: 27px; */
+  height: 3px;
+  margin: 5px 0;
+  background-color: #954fba;
+  transition: 0.25s ease-in;
+}
+.bar:nth-child(1) {
+  width: 13px;
+  top: 0;
+  left: 0;
+}
+.bar:nth-child(2) {
+  width: 7.54px;
+  left: 50%;
+}
+.bar:nth-child(3) {
+  width: 13px;
+  top: 8px;
+}
+.bar:nth-child(4) {
+  width: 13px;
+  top: 8px;
+  left: 50%;
+}
+.bar:nth-child(5) {
+  width: 13px;
+  top: 16px;
+  left: 0;
+}
+.bar:nth-child(6) {
+  width: 2.6px;
+  top: 16px;
+  left: 50%;
+}
+@media screen and (max-width: 1024px) {
+  #hambug {
+    display: block;
+  }
+  .contents:not(:nth-child(8)){
+    display: none;
+  }
+  #nav_contents a,
+  #nav_contents button{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contents{
+    display: none;
+  }
+  .logo img {
+    margin-right: 1rem;
+  }
+}
+
+#nav_contents_1 {
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  animation: a 1s;
+}
+#nav_contents_1 a {
+  color: #666;
+  font-weight: bold;
+  padding: 2rem 0;
+  font-size: 1.4rem;
 }
