@@ -1,12 +1,5 @@
 <div class="container">
-  <h2 class="vision">Our Vision</h2>
-  <h1>
-    Healthcare should be simple,<br />
-    convenient and affordable.
-  </h1>
-  <h2>
-    Virtuwell is a 24/7 online clinic that reinvents the diagnosis and treatment
-    experience. By blending proven clinic practices with a refreshingly simple
-    online platform, Virtuwell is saving consumers time and money.
-  </h2>
+  <h2 class="vision">{{content.main_title}}</h2>
+  <h1 [innerHTML]="content.sub_heading"></h1>
+  <h2 [innerHTML]="content.description"></h2>
 </div>

@@ -1,8 +1,14 @@
-<div class="banner">
+<div
+  class="banner"
+  [style.backgroundImage]="'url(' + content.banner_image.url + ')'"
+  [style.backgroundColor]="content.bg_color"
+>
   <div class="banner-text">
-    <h1>Here to change</h1>
-    <h3>healthcare.</h3>
+    <h1>{{ content.main_title }}</h1>
+    <h3>{{ content.sub_title }}</h3>
     <hr class="th_break" />
   </div>
-  <button mat-flat-button class="btn-getstarted">Get Started</button>
+  <button mat-flat-button class="btn-getstarted">
+    {{ content.call_to_action.title }}
+  </button>
 </div>

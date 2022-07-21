@@ -8,37 +8,35 @@ import { Router } from '@angular/router';
   styleUrls: [],
 })
 export class PageRenderComponent implements OnInit, AfterContentInit {
+  pageComponents: IPageComponents[] = [];
   constructor(private cs: ContentstackQueryService, private router: Router) {}
 
   getEntry() {
-    this.cs
-      .getEntryWithQuery('full_page', { key: 'url', value: this.router.url })
-      .then(
-        (entry) => {
-          try {
-            const pageReferences =
-              entry[0][0].page_components[0].page.reference;
-            for (const reference of pageReferences) {
-              const uid = reference.uid;
-              const contentTypeUid = reference['_content_type_uid'];
-              this.cs.getEntry(uid).then(console.log);
-              console.log(uid, contentTypeUid);
-            }
-          } catch (error) {
-            console.error('Not able to find the path for page references');
-          }
-        },
-        (err) => {
-          console.error(err);
-        }
-      );
+    this.cs.getPageComponents(this.router.url).then(
+      (pageComponents) => {
+        this.pageComponents = pageComponents;
+      },
+      (err) => {
+        console.error(err);
+        this.router.navigate(['/404'], { replaceUrl: true });
+      }
+    );
   }
+
   ngOnInit(): void {
     this.getEntry();
   }
+
   ngAfterContentInit(): void {
     this.cs.onEntryChange(() => {
       this.getEntry();
     });
+  }
+
+  getBannerProps(component: IPageComponents): IBannerComponent {
+    return component.props as IBannerComponent;
+  }
+  getVisionProps(component: IPageComponents): IVisionComponent {
+    return component.props as IVisionComponent;
   }
 }

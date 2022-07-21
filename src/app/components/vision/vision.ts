@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-vision',
   templateUrl: './vision.html',
-  styleUrls: ['./vision.css']
+  styleUrls: ['./vision.css'],
 })
 export class VisionComponent implements OnInit {
+  @Input() content: IVisionComponent = {
+    main_title: '',
+    sub_heading: '',
+    description: '',
+  };
 
+  constructor() {}
 
-  constructor() { }
-  
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

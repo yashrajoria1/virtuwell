@@ -1,1 +1,13 @@
-<div>Hello World!</div>
+<main>
+  <div *ngFor="let pageComponent of pageComponents">
+    <app-banner
+      *ngIf="pageComponent.contentType === 'module_poc'"
+      [content]="getBannerProps(pageComponent)"
+    >
+    </app-banner>
+    <app-vision
+      *ngIf="pageComponent.contentType === 'module_vision'"
+      [content]="getVisionProps(pageComponent)"
+    ></app-vision>
+  </div>
+</main>

@@ -40,6 +40,50 @@ export class ContentstackQueryService {
       );
   }
 
+  getPageComponents(url: string): Promise<IPageComponents[]> {
+    return this.getEntryWithQuery('full_page', { key: 'url', value: url }).then(
+      (entry) => {
+        try {
+          const pageReferences = entry[0][0].page_components[0].page.reference;
+          const result = [];
+          for (const reference of pageReferences) {
+            const entryUid = reference.uid;
+            const contentType = reference['_content_type_uid'];
+            result.push(
+              this.getEntryWithContent(contentType, entryUid).then((props) => ({
+                props,
+                contentType,
+              }))
+            );
+          }
+          return Promise.all(result);
+        } catch (error) {
+          throw `Not able to find the path for page references ${error}`;
+        }
+      }
+    );
+  }
+
+  getEntryWithContent(
+    contentTypeUid: string,
+    entryId: string
+  ): Promise<AllComponentProps> {
+    return this.cs
+      .stack()
+      .contentstack.ContentType(contentTypeUid)
+      .Entry(entryId)
+      .toJSON()
+      .fetch()
+      .then(
+        (entry: Utils.EntryEmbedable) => {
+          return entry;
+        },
+        (err: Error) => {
+          console.error(err, 'err');
+        }
+      );
+  }
+
   getEntryWithQuery(
     contentTypeUid: string,
     { key, value }: { key: string; value: string },

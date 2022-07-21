@@ -6,14 +6,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BannerComponent } from './components/banner/banner.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
-import { VisionComponent } from "./components/vision/vision";
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { VisionComponent } from './components/vision/vision';
 import { PromiseComponent } from './components/promise/promise.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ExperienceComponent } from './components/experience/experience.component'
+import { PageRenderComponent } from './components/page-renderer/page.renderer.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 import { contentstackConfig } from '../environments/environment';
-import {ContentstackModule} from "../modules/contentstack/contentstack.module"
+import { ContentstackModule } from '../modules/contentstack/contentstack.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import {ContentstackModule} from "../modules/contentstack/contentstack.module"
     VisionComponent,
     PromiseComponent,
     FooterComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    PageRenderComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,9 +33,9 @@ import {ContentstackModule} from "../modules/contentstack/contentstack.module"
     MatToolbarModule,
     MatButtonModule,
     ContentstackModule.initializeApp(contentstackConfig),
-    MatCardModule
+    MatCardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
